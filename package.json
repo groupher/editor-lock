@@ -5,10 +5,11 @@
     "codex editor",
     "lock",
     "tool",
+    "base64",
     "editor.js",
     "editorjs"
   ],
-  "description": "Lock Tool for Editor.js",
+  "description": "Lock(base64) inline-tool for Editor.js",
   "license": "MIT",
   "repository": "https://github.com/groupher/editor-lock",
   "main": "./dist/bundle.js",
