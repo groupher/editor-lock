@@ -1,0 +1,10 @@
+.cdx-lock {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.cdx-lock::before {
+  content: "🔒";
+  filter: saturate(0);
+}
