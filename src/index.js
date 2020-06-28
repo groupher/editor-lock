@@ -36,14 +36,14 @@ export default class Lock {
      *
      * @type {string}
      */
-    this.tag = "SPAN";
+    this.tag = "ADDR";
 
     /**
      * CSS classes
      */
     this.iconClasses = {
       base: this.api.styles.inlineToolButton,
-      active: this.api.styles.inlineToolButtonActive
+      active: this.api.styles.inlineToolButtonActive,
     };
   }
 
@@ -130,7 +130,7 @@ export default class Lock {
     lock.appendChild(range.extractContents());
 
     // encode with Base64
-    lock.innerText = btoa(lock.innerText)
+    lock.innerText = btoa(lock.innerText);
     range.insertNode(lock);
 
     /**
@@ -163,7 +163,7 @@ export default class Lock {
     /**
      * Insert extracted and decoded base64 content
      */
-    unwrappedContent.textContent = atob(unwrappedContent.textContent)
+    unwrappedContent.textContent = atob(unwrappedContent.textContent);
     range.insertNode(unwrappedContent);
 
     /**
@@ -188,9 +188,9 @@ export default class Lock {
    */
   static get sanitize() {
     return {
-      span: {
-        class: Lock.CSS
-      }
+      addr: {
+        class: Lock.CSS,
+      },
     };
   }
 }
