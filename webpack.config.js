@@ -9,7 +9,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             query: {
-              presets: [ '@babel/preset-env' ],
+              presets: ['@babel/preset-env'],
             },
           },
         ]
@@ -24,10 +24,11 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname + '/dist',
-    publicPath: '/',
-    filename: 'bundle.js',
-    library: 'Lock',
-    libraryTarget: 'umd'
+    path: __dirname + "/dist",
+    publicPath: "/",
+    filename: "bundle.js",
+    library: "Lock",
+    libraryTarget: "umd",
+    libraryExport: "default",
   }
 };

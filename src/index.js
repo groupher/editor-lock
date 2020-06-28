@@ -1,14 +1,14 @@
 /**
  * Build styles
  */
-require("./index.css").toString();
+import './index.css'
 
 /**
  * Lock Tool for the Editor.js
  *
  * Allows to wrap inline fragment and style it somehow.
  */
-class Lock {
+export default class Lock {
   /**
    * Class name for term-tag
    *
@@ -194,5 +194,3 @@ class Lock {
     };
   }
 }
-
-module.exports = Lock;
