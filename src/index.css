@@ -2,9 +2,10 @@
   text-decoration: none;
   position: relative;
   display: inline-block;
-  font-size: 0.85em;
-  padding: 0;
-  margin-left: 2px;
+  font-size: 14px;
+  margin-right: 2px;
+  padding-left: 2px;
+  padding-right: 4px;
   /* same color with the inline-code background */
   background: #eff5f9;
   border-radius: 5px;
@@ -13,10 +14,7 @@
 .cdx-lock::before {
   content: "🔒";
   filter: saturate(0);
-}
-
-.cdx-lock::after {
-  content: "🔒";
-  filter: saturate(0);
-  margin-left: 2px;
+  margin-right: 6px;
+  font-size: 12px;
+  padding-left: 2px;
 }
