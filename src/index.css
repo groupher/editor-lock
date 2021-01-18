@@ -4,17 +4,9 @@
   display: inline-block;
   font-size: 14px;
   margin-right: 2px;
-  padding-left: 2px;
-  padding-right: 4px;
+  padding: 0 5px;
   /* same color with the inline-code background */
   background: #eff5f9;
   border-radius: 5px;
-}
-
-.cdx-lock::before {
-  content: "🔒";
-  filter: saturate(0);
-  margin-right: 6px;
-  font-size: 12px;
-  padding-left: 2px;
+  filter: blur(1.5px);
 }
